@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        
+        <title>Grades Form - GFYSHS Enrollment</title>
+        <link rel="shortcut icon" href="resources/images/favicon.ico"/>
+        <link rel="stylesheet" media="screen" href="resources/css/ui-lightness/jquery.ui.all.css" type="text/css"/>
+        <link href="resources/css/general.css" rel="stylesheet" media="screen"/>
+    </head>
+    <body>
+        
+
+
+        <!--Header-->
+        <header>
+            <div class="container">
+                <img src="resources/images/header.png" class="img-responsive img-div"/>
+            </div>
+        </header>
+        
+        <div class=" name-div text-right">
+            <div class="container">
+                Welcome <strong> NELSON NEIL N/A MADRIAGA  </strong>&nbsp;&nbsp;<a href="logout" title="logout">
+                <strong><i class="glyphicon glyphicon-off"></i></strong></a>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                
+                <div id="navbar" class="collapse navbar-collapse" >
+                    <ul class="nav navbar-nav center-nav">
+                        <!-- dynamic add class="active" -->
+                        <li><a href="basicinformation.html" id="basic_info">Basic Information</a></li>
+                        
+                        <li><a href="initcurrentschool.html" id="curr_school">Current School</a></li>
+                        
+                        
+
+                        
+                        <li><a href="gradesformeditorjhs.html" id="gradesformshs">Grades Form</a></li>
+                        
+                        <li><a href="informationsurvey.html" id="info_survey">Information Survey</a></li>
+                        <li><a href="finishregistration.html" id="uploading">Documents Uploading</a></li>
+                        <li><a href="activitylog.html" id="actlogs">Activity Log</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <section class="content-section">
+            <div class="container">
+                <h3 class="text-warning">
+                    General Flaviano Senior High School Registration
+                </h3>
+                <div class="panel panel-yellow">
+                    <div class="panel-heading">Grades form</div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" id="form1" name="form1" method="post" action="gradesformeditorjhs.html" onsubmit="return Validate();">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="alert alert-warning" role="alert">
+                                        <strong>IMPORTANT NOTES :</strong>
+                                        <ul class="important-notes-single">
+                                            <li>The Grades encoded here should be those reflected in the Grades Form accomplished by your School Registrar.</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                
+                                    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">            
+                                            <div class="panel panel-default">
+                                                
+                                                
+                                                <div class="panel-heading black-text">GRADE 5 Grades</div>
+                                                <input name="ustgrade_5" type="hidden" id="ustgrade_5" value="0"/>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-6 control-label">English Average :</label>
+                                                        <div class="col-sm-6">
+                                                            <input class="input-sm form-control gradesBox" data-level="5" data-subject="English" name="ave_eng_5" type="text" id="ave_eng_5" maxlength="10" 
+                                                            value="" />
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="form-group">
+                                                        <label class="col-sm-6 control-label">Math Average :</label>
+                                                        <div class="col-sm-6">
+                                                            <input class="input-sm form-control gradesBox" data-level="5" data-subject="Math" name="ave_math_5" type="text" id="ave_math_5" maxlength="10" 
+                                                            value="" />
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="form-group">
+                                                        <label class="col-sm-6 control-label">Science Average :</label>
+                                                        <div class="col-sm-6">
+                                                            <input class="input-sm form-control gradesBox" data-level="5" data-subject="Science" name="ave_sci_5" type="text" id="ave_sci_5" maxlength="10" 
+                                                            value="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-6 control-label">GA :</label>
+                                                        <div class="col-sm-6">
+                                                            <input class="input-sm form-control gradesBox" data-level="5" data-subject="General" name="gwa_5" type="text" id="gwa_5" maxlength="10" 
+                                                            value="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">            
+                                            <div class="panel panel-default">
+                                                
+                                                
+                                                    
+                                                
+                                                <div class="panel-heading black-text">GRADE 6 Grades (First Grading Only)</div>
+                                                <input name="ustgrade_6" type="hidden" id="ustgrade_6" value="0"/>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-6 control-label">English Average :</label>
+                                                        <div class="col-sm-6">
+                                                            <input class="input-sm form-control gradesBox" data-level="6" data-subject="English" name="ave_eng_6" type="text" id="ave_eng_6" maxlength="10" 
+                                                            value="" />
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="form-group">
+                                                        <label class="col-sm-6 control-label">Math Average :</label>
+                                                        <div class="col-sm-6">
+                                                            <input class="input-sm form-control gradesBox" data-level="6" data-subject="Math" name="ave_math_6" type="text" id="ave_math_6" maxlength="10" 
+                                                            value="" />
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="form-group">
+                                                        <label class="col-sm-6 control-label">Science Average :</label>
+                                                        <div class="col-sm-6">
+                                                            <input class="input-sm form-control gradesBox" data-level="6" data-subject="Science" name="ave_sci_6" type="text" id="ave_sci_6" maxlength="10" 
+                                                            value="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-6 control-label">GA :</label>
+                                                        <div class="col-sm-6">
+                                                            <input class="input-sm form-control gradesBox" data-level="6" data-subject="General" name="gwa_6" type="text" id="gwa_6" maxlength="10" 
+                                                            value="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+
+                                
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <hr/>
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn btn-warning" name="btnSubmit" id="btnSubmit" value="Submit">
+                                            <i class="glyphicon glyphicon-floppy-disk"></i>&nbsp;Save
+                                        </button>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>      
+                        </form>
+                    </div>
+                </div>   
+            </div>  
+        </section>
+
+                <!--Footer-->
+        <section class="contact-section bg-ltblack text-white ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <h4 class="text-gold">CONTACT US</h4>
+                        <table class="table table-borderless table-condensed">
+                            <tr>
+                                <th class="col-sm-1">
+                                    <i class="glyphicon glyphicon-home"></i>
+                                </th>
+                                <td class="col-sm-11">
+                                    <strong>General Flaviano Yengko Senior High School</strong><br />
+                                    Blk 7 Lot 66-68 Dama de Noche Street Pasong Buaya 2,<br>
+                                    Imus city, Cavite
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="col-sm-1">
+                                    <i class="glyphicon glyphicon-globe"></i>
+                                </th>
+                                <td class="col-sm-11">
+                                    <a class="text-white" href="https://www.facebook.com/YengkoSHS/" target="_blank">https://www.facebook.com/YengkoSHS/</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="col-sm-1">
+                                    <i class="glyphicon glyphicon-globe"></i>
+                                </th>
+                                <td class="col-sm-11">
+                                    <a class="text-white" href="https://www.facebook.com/profile.php?id=100086140871661" target="_blank">https://www.facebook.com/SSG Yengko 2022-2023/</a>
+                                </td>
+                            </tr>    
+            </div>
+        </footer>  
+                <!--Scripts-->
+        <script src="resources/jquery/jqueryui.min.js" type="text/javascript"></script>
+        <script src="resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <script src="resources/jquery/ui/minified/jquery-ui.custom.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                if ($(window).width() <= 568  ){
+                    $("h3 small a").removeClass("pull-right");   
+                    $("div.panel-heading button").removeClass("pull-right");
+                    $("h3 small form").removeClass("pull-right");
+                    
+                    $("h3 small a").addClass("block");
+                    $("div.panel-heading button").addClass("block");
+                    $("h3 small form").addClass("block");
+                    
+                    $("h3").css("font-size","1.3em");
+                    $("body").css("font-size","1em");
+                }
+                
+                if ($(window).width() > 568  ){
+                    $("h3 small a").addClass("pull-right");   
+                    $("div.panel-heading button").addClass("pull-right");
+                    $("h3 small form").addClass("pull-right");
+                    
+                    $("h3 small a").removeClass("block");
+                    $("div.panel-heading button").removeClass("block");
+                    $("h3 small form").removeClass("block");
+                    
+                }
+            });
+        </script>    
+        <script src="resources/script/gradesform.js" type="text/javascript"></script>
+    </body>
+</html>

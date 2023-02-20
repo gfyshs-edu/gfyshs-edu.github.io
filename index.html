@@ -37,7 +37,6 @@
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
@@ -49,15 +48,27 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Tracks</a></li>
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="about.html" target="_self">School History</a></li>
+              <li><a href="achievements.html" target="_self">Achievements & Recognitions</a></li>
+            </ul> 
+           </li>
+          <!-- <li class="dropdown"><a href="#"><span>Enrollment</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="requirements.html" target="_self">Requirements</a></li>
+            <li><a href="enrollment/(index)1.html" target="_blank">Enrollment Portal</a></li>
+          </ul> 
+          </li> -->
+          <li><a href="courses.html">Tracks</a></li> 
           <!-- <li><a href="trainers.html">Trainers</a></li> -->
-          <li><a href="events.html">News & Events</a></li>
+          <li><a href="events.html">News & Events</a></li> 
           <!-- <li><a href="pricing.html">Pricing</a></li> -->
 
           <li class="dropdown"><a href="#"><span>Student Organizations</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="https://www.facebook.com/profile.php?id=100086140871661">Supreme Student Government</a></li>            
+              <li><a href="https://www.facebook.com/profile.php?id=100086140871661">Supreme Student Government</a></li>           
               <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -82,6 +93,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
+      <!-- <a href="enrollment/(index)1.html" class="get-started-btn">Enroll Now</a>-->
       <a href="courses.html" class="get-started-btn">Get Started</a>
 
     </div>
@@ -179,8 +191,8 @@
 
       </div>
     </section><!-- End Counts Section -->
-
-    <!-- ======= Why Us Section ======= -->
+    
+    <!-- ======= For Tracks ======= -->
     <section id="why-us" class="why-us">
       <div class="container" data-aos="fade-up">
 
@@ -231,7 +243,7 @@
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </section><!-- End Track 2 Section -->
 
     <!-- ======= Features Section ======= -->
     <!-- <section id="features" class="features">
@@ -328,16 +340,21 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="course-item">
-              <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
+
+              <a href="stem.html"><img src="assets/img/course-1.jpg" class="img-fluid" alt="..."></a>
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>STEM</h4>
+              <!-- <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>STEM</h4>
                   <!-- <p class="price">$169</p> -->
-                </div>
+              </div>
 
-                <h3><a href="stem.html">Science, Technology, Engineering, and Mathematics</a></h3>
+                 <h3><a href="stem.html">Science, Technology, Engineering, and Mathematics</a></h3>
                 <!-- <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p> -->
-                <div class="trainer d-flex justify-content-between align-items-center">
+                 <div class="trainer d-flex justify-content-between align-items-center">
                    <div class="trainer-profile d-flex align-items-center">
                     <!-- <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
                     <span>Antonio</span>
@@ -354,7 +371,12 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="course-item">
-              <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
+
+              <a href="humss.html"><img src="assets/img/course-2.jpg" class="img-fluid" alt="..."></a>
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>HUMSS</h4>
+              <!-- <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>HUMSS</h4>
@@ -380,7 +402,12 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="course-item">
-              <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
+
+              <a href="abm.html"><img src="assets/img/course-3.jpg" class="img-fluid" alt="..."></a>
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>ABM</h4>
+              <!-- <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>ABM</h4>
@@ -503,22 +530,31 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Tracks</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="termsofservice.html">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="privacypolicy.html">Privacy policy</a></li> -->
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="termsofservice.html">Terms of service</a></li> -->
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="privacypolicy.html">Privacy policy</a></li> -->
             </ul>
           </div>
 
            <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Group</h4>
+            <h4>Affiliate Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="trainers.html">About Tedtech</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="trainers.html">About Tedtech</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.deped.gov.ph/" target="_blank">DepEd</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.facebook.com/DepEdTayoCalabarzon" target="_blank">DepEd CALABARZON</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.depedimuscity.com/" target="_blank">DepEd Imus City</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
             </ul>
           </div> 
 
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Gov Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.gov.ph/" target="_blank">Gov Ph</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://cavite.gov.ph/home/" target="_blank">Cavite Ph</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://cityofimus.gov.ph/" target="_blank">Imus Ph</a></li>
+            </ul>
+          </div>
           <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
@@ -546,13 +582,13 @@
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
-      <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div> -->
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+      </div> 
     </div>
   </footer><!-- End Footer -->
 

@@ -494,6 +494,176 @@ h6 {
   }
 }
 
+/*-------------------------------------------------
+-------------------achievments&recos--------------------------*/
+#hero1 {
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(9, 9, 9, 0.8);
+  overflow: hidden;
+  position: relative;
+} 
+
+#hero1 .carousel,
+#hero1 .carousel-inner,
+#hero1 .carousel-item,
+#hero1 .carousel-item::before {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#hero1 .carousel-item::before {
+  content: "";
+  background-color: rgba(48, 136, 73, 0.555);
+}
+
+#hero1 .carousel-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 50px;
+  right: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#hero1 .container1 {
+  text-align: center;
+}
+
+#hero1 h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero1 p {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#hero1 .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+#hero1 .carousel-inner .carousel-item,
+#hero1 .carousel-inner .active.carousel-item-start,
+#hero1 .carousel-inner .active.carousel-item-end {
+  opacity: 0;
+}
+
+#hero1 .carousel-inner .active,
+#hero1 .carousel-inner .carousel-item-next.carousel-item-start,
+#hero1 .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#hero1 .carousel-control-next-icon,
+#hero1 .carousel-control-prev-icon {
+  background: none;
+  font-size: 30px;
+  line-height: 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero1 .carousel-control-next-icon:hover,
+#hero1 .carousel-control-prev-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#hero1 .carousel-indicators li {
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#hero1 .carousel-indicators li.active {
+  opacity: 1;
+  background: #5cb874;
+}
+
+#hero1 .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  background: #5cb874;
+}
+
+#hero1 .btn-get-started:hover {
+  background: #6ec083;
+}
+
+@media (max-width: 720px) {
+  #hero1 {
+    height: 100vh;
+  }
+
+  #hero1 .carousel-container1 {
+    top: 66px;
+  }
+}
+
+@media (max-width: 720px) {
+  #hero1 h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 720px) {
+
+  #hero1 .carousel-control-prev,
+  #hero1 .carousel-control-next {
+    width: 5%;
+  }
+}
+
+@media (max-height: 604p  ) {
+  #hero1 {
+    height: 120vh;
+  }
+}
+/*end*/
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/

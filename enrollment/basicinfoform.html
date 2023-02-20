@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        
+        <title>Personal Information Form - GFYSHS Enrollment</title>
+        <link rel="shortcut icon" href="resources/images/favicon.ico"/>
+        <link rel="stylesheet" media="screen" href="resources/css/ui-lightness/jquery.ui.all.css" type="text/css"/>
+        <link href="resources/css/general.css" rel="stylesheet" media="screen"/>
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <div class="container">
+                <img src="resources/images/header.png" class="img-responsive img-div"/>
+            </div>
+        </header>
+        
+        <section class="register-section">
+            <div class="container">
+                <div class="rows">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="text-warning">General Flaviano Yengko Senior High School Registration</h2>
+                        <form class="form-horizontal" id="form1" name="form1" method="post" action="reviewbasic.html" onsubmit="return Validate();">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">Registration Editor</div>
+                                <div class="panel-body">
+                                    <div class="rows">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="alert alert-warning" role="alert">
+                                                <strong>IMPORTANT NOTES :</strong>
+                                                <ul class="important-notes">
+                                                    <li>* Required fields.</li>
+                                                    <li>Use your Legal Name (as it appears on birth certificate).</li>
+                                                    <li>Fields cannot be edited once the Registration is submitted</li>
+                                                </ul>
+                                            </div>  
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">School year to enroll :</label>
+                                                <div class="col-sm-3">
+                                                    
+                                                    <select class="input-sm form-control" name="otherName" id="otherName">
+                                                        <option>2023-2024</option>                                            
+                                                        </select>
+                                                </div>
+                                                <br><br>
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label">Grade level to enroll :</label>
+                                                    <div class="col-sm-3">
+                                                        
+                                                        <select class="input-sm form-control" name="otherName" id="otherName">
+                                                            <option>Grade 11</option>      
+                                                            <option>Grade 12</option>                                        
+                                                            </select>
+                                                    </div>
+                                                    <br><br>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label">Strand to enroll :</label>
+                                                        <div class="col-sm-3">
+                                                            
+                                                            <select class="input-sm form-control" name="otherName" id="otherName">
+                                                                <option>STEM</option>      
+                                                                <option>TVL-HE</option>   
+                                                                <option>TVL-CSS</option>   
+                                                                <option>HUMSS</option>   
+                                                                <option>ABM</option>                                        
+                                                                </select>
+                                                        </div>
+                                            
+                                                <br>
+                                            
+                                            
+
+                                           <p></p><h4>Basic Information</h4></p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* Last Name :</label>
+                                                <div class="col-sm-8">
+                                                    <input class="input-sm form-control" name="surname" type="text" id="surname" maxlength="40" value="" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* First Name :</label>
+                                                <div class="col-sm-8">
+                                                    <input class="input-sm form-control" name="firstName" type="text" id="firstName" maxlength="40" value="" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label"> Middle Name :</label>
+                                                <div class="col-sm-8">
+                                                    <input class="input-sm form-control" name="middleName" type="text" id="middleName" maxlength="40" value="" />
+                                                    <span class="help-block">Type <em>n/a</em> if not applicable</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Suffix Name :</label>
+                                                <div class="col-sm-3">
+                                                    
+                                                    <select class="input-sm form-control" name="otherName" id="otherName">
+                                                        <option></option>
+                                                        <option >I</option>
+<option >II</option>
+<option >III</option>
+<option >IV</option>
+<option >IX</option>
+<option >JR</option>
+<option >SR</option>
+<option >V</option>
+<option >VI</option>
+<option >VII</option>
+<option >VIII</option>
+<option >X</option>
+<option >XI</option>
+<option >XII</option>
+<option >XIII</option>
+<option >XIV</option>
+<option >XV</option>
+
+                                                    </select>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* Sex :</label>
+                                                <div class="col-sm-4">
+                                                    
+                                                    <select class="input-sm form-control" name="gender" id="gender">
+                                                        <option></option>
+                                                        <option value="F" >Female</option>
+<option value="M" >Male</option>
+
+                                                    </select>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* Birth Date :</label>
+                                                <div class="col-sm-4">
+                                                    
+                                                    <div class="control-group">
+                                                        <div class="controls">
+                                                            <div class="input-group">
+                                                                <input id="datepicker type="text" class="datepicker form-control input-sm" placeholder="Select Date" name="birthdate" size="10" >
+                                                                <label for="birthdate" class="input-group-addon btn btn-xs ">
+                                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* Citizenship :</label>
+                                                <div class="col-sm-8">
+                                                    <select class="input-sm form-control" name="nationality" id="nationality">
+                                                    <option>Select a citizenship</option>
+                                                    <option value="1" >FILIPINO</option>
+                                                    <option value="2" >AMERICAN</option>
+<option value="3" >CHINESE</option>
+<option value="4" >N. KOREAN</option>
+<option value="5" >S. KOREAN</option>
+<option value="6" >NORWEGIAN</option>
+<option value="7" >INDIAN</option>
+<option value="8" >INDONESIAN</option>
+<option value="9" >JAPANESE</option>
+<option value="10" >TAIWANESE</option>
+<option value="11" >SINGAPOREAN</option>
+<option value="12" >VIETNAMESE</option>
+<option value="13" >BRITISH</option>
+<option value="14" >BELGIAN</option>
+<option value="15" >CANADIAN</option>
+<option value="16" >IRANIAN</option>
+<option value="17" >ITALIAN</option>
+<option value="18" >MONGOLIAN</option>
+<option value="19" >AUSTRALIAN</option>
+<option value="20" >NEPALI</option>
+<option value="21" >BURMESE</option>
+<option value="22" >BANGLADESH</option>
+<option value="23" >THAI</option>
+<option value="24" >LAOTIAN</option>
+<option value="25" >CAMEROONIAN</option>
+<option value="26" >MAURITIAN</option>
+<option value="27" >FRENCH</option>
+<option value="28" >NIGERIAN</option>
+<option value="29" >TURK</option>
+<option value="30" >EMIRIAN</option>
+<option value="31" >BAHRAINI</option>
+<option value="32" >AFRICAN</option>
+<option value="33" >SAUDI ARABIAN</option>
+<option value="34" >EGYPTIAN</option>
+<option value="35" >GERMAN</option>
+<option value="36" >LEBANESE</option>
+<option value="37" >PAKISTANI</option>
+<option value="38" >SPANISH</option>
+<option value="39" >TANZANIAN</option>
+<option value="40" >JORDANIAN</option>
+<option value="41" >MALAYSIAN</option>
+<option value="42" >SWEDISH</option>
+<option value="43" >CONGOLESE</option>
+<option value="44" >DUTCH</option>
+<option value="45" >PAPUA NEW GUINEAN</option>
+<option value="46" >POLISH</option>
+<option value="47" >SRI LANKAN</option>
+<option value="48" >ZAMBIAN</option>
+<option value="49" >BRAZILIAN</option>
+<option value="50" >CROATS</option>
+<option value="51" >COLUMBIANS</option>
+<option value="52" >CHILEANS</option>
+<option value="53" >EAST TOMORESE</option>
+<option value="54" >MICRONESIANS</option>
+<option value="55" >PERUVIAN</option>
+<option value="56" >KENYAN</option>
+<option value="57" >ETHIOPIAN</option>
+<option value="58" >NEW ZEALAND</option>
+<option value="59" >GHANA</option>
+<option value="60" >TONGAN</option>
+<option value="61" >ZIMBABWEAN</option>
+<option value="62" >VANUATUAN</option>
+<option value="63" >DANISH</option>
+<option value="64" >BURKINABE</option>
+<option value="65" >PANAMIAN</option>
+<option value="66" >RWANDAN</option>
+<option value="67" >ANGOLAN</option>
+<option value="68" >IRAQI</option>
+<option value="69" >AFGHAN</option>
+<option value="70" >ALBANIAN</option>
+<option value="71" >ALGERIAN</option>
+<option value="72" >ANDORRAN</option>
+<option value="73" >ARGENTINIAN</option>
+<option value="74" >ARMENIAN</option>
+<option value="75" >AUSTRIAN</option>
+<option value="76" >AZERBAIJANI</option>
+<option value="77" >BAHAMIAN</option>
+<option value="78" >BARBADIAN</option>
+<option value="79" >BELORUSSIAN</option>
+<option value="80" >BENINESE</option>
+<option value="81" >BHUTANESE</option>
+<option value="82" >BOLIVIAN</option>
+<option value="83" >BOSNIAN</option>
+<option value="84" >BRUNEIAN</option>
+<option value="85" >BULGARIAN</option>
+<option value="87" >BURUNDIAN</option>
+<option value="88" >CAMBODIAN</option>
+<option value="89" >CHADIAN</option>
+<option value="90" >CUBAN</option>
+<option value="91" >CYPRIOT</option>
+<option value="92" >CZECH</option>
+<option value="93" >DOMINICAN</option>
+<option value="94" >ECUADOREAN</option>
+<option value="95" >SALVADOREAN</option>
+<option value="96" >ERITREAN</option>
+<option value="97" >ESTONIAN</option>
+<option value="98" >FIJIAN</option>
+<option value="99" >FINN</option>
+<option value="100" >GABONESE</option>
+<option value="101" >GAMBIAN</option>
+<option value="102" >GEORGIAN</option>
+<option value="103" >GREEK</option>
+<option value="104" >GRENADIAN</option>
+<option value="105" >GUATEMALAN</option>
+<option value="106" >GUINEAN</option>
+<option value="107" >GUYANESE</option>
+<option value="108" >HAITIAN</option>
+<option value="109" >HONDURAN</option>
+<option value="110" >HUNGARIAN</option>
+<option value="111" >ICELANDER</option>
+<option value="112" >IRISHMAN</option>
+<option value="113" >ISRAELI</option>
+<option value="114" >JAMAICAN</option>
+<option value="115" >KAZAKH</option>
+<option value="116" >KUWAITI</option>
+<option value="117" >LATVIAN</option>
+<option value="118" >LIBERIAN</option>
+<option value="119" >LIBYAN</option>
+<option value="120" >LIECHTENSTEINER</option>
+<option value="121" >LITHUANIAN</option>
+<option value="122" >LUXEMBOURGER</option>
+<option value="123" >MACEDONIAN</option>
+<option value="124" >MADAGASCAN</option>
+<option value="125" >MALAWIAN</option>
+<option value="126" >MALDIVIAN</option>
+<option value="127" >MALIAN</option>
+<option value="128" >MALTESE</option>
+<option value="129" >MAURITANIAN</option>
+<option value="130" >MEXICAN</option>
+<option value="131" >MOLDOVAN</option>
+<option value="132" >MONACAN</option>
+<option value="133" >MONTENEGRIN</option>
+<option value="134" >MOROCCAN</option>
+<option value="135" >MOZAMBICAN</option>
+<option value="136" >NAMIBIAN</option>
+<option value="138" >NICARAGUAN</option>
+<option value="139" >NIGERIEN</option>
+<option value="140" >PARAGUAYAN</option>
+<option value="141" >QATARI</option>
+<option value="142" >ROMANIAN</option>
+<option value="143" >RUSSIAN</option>
+<option value="144" >SENEGALESE</option>
+<option value="145" >SERBIAN</option>
+<option value="146" >SLOVAK</option>
+<option value="147" >SLOVENIAN</option>
+<option value="148" >SOMALI</option>
+<option value="149" >SUDANESE</option>
+<option value="150" >SURINAMESE</option>
+<option value="151" >SWAZI</option>
+<option value="152" >SWISS</option>
+<option value="153" >SYRIAN</option>
+<option value="154" >TADZHIK</option>
+<option value="155" >TOGOLESE</option>
+<option value="156" >TRINIDADIAN</option>
+<option value="157" >TUNISIAN</option>
+<option value="158" >UGANDAN</option>
+<option value="159" >UKRAINIAN</option>
+<option value="160" >URUGUAYAN</option>
+<option value="161" >UZBEK</option>
+<option value="162" >VENEZUELAN</option>
+<option value="163" >YEMENI</option>
+<option value="164" >YUGOSLAV</option>
+<option value="165" >ANTIGUAN/BARBUDAN</option>
+<option value="166" >BELIZEAN</option>
+<option value="167" >BOTSWANAN</option>
+<option value="168" >CAPE VERDEAN</option>
+<option value="169" >COMORIAN</option>
+<option value="170" >COSTA RICAN</option>
+<option value="171" >IVOIRIAN</option>
+<option value="172" >DJIBOUTIAN</option>
+<option value="174" >EQUATORIAL GUINEAN</option>
+<option value="175" >BISSAU-GUINEAN</option>
+<option value="176" >I-KIRIBATI</option>
+<option value="178" >KYRGYZSTANI</option>
+<option value="179" >MOSOTHO</option>
+<option value="180" >MARSHALLESE</option>
+<option value="182" >NAURUAN</option>
+<option value="183" >OMANI</option>
+<option value="184" >PALAUAN</option>
+<option value="185" >PORTUGUESE</option>
+<option value="186" >KITTITIAN/NEVISIAN</option>
+<option value="187" >ST. LUCIAN</option>
+<option value="188" >SAMOAN</option>
+<option value="189" >SAMMARINESE</option>
+<option value="190" >SAO TOMEAN</option>
+<option value="191" >SEYCHELLOIS</option>
+<option value="192" >SIERRA LEONIAN</option>
+<option value="193" >SOLOMON ISLANDER</option>
+<option value="194" >TIMORESE</option>
+<option value="195" >TURKMEN</option>
+<option value="196" >TUVALUAN</option>
+<option value="9999" >NOT SPECIFIED</option>
+                                                    </select>
+                                                    <input name="nationalityName" type="hidden" id="nationalityName"/>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* Religion :</label>
+                                                <div class="col-sm-8">
+                                                    
+                                                    <select class="input-sm form-control" name="religion" id="religion">
+                                                        <option value="0">select a religion</option>                               
+                                                        <option value="19" >Roman Catholic </option>                                             
+                                                        <option value="18" >Iglesia ni Cristo</option>
+                                                        <option value="18" >Evangelicals (PCEC)</option>
+                                                        <option value="18" >Non-Roman Catholic and Protestant (NCCP)</option>
+                                                        <option value="18" >Aglipayan</option>
+                                                        <option value="18" >Seventh-day Adventist</option>
+                                                        <option value="18" >Bible Baptist Church</option>
+                                                        <option value="18" >United Church of Christ in the Philippines</option>
+                                                        <option value="18" >Jehovah's Witnesses</option>
+                                                        <option value="18" >Islam</option>
+                                                        <option value="18" >None</option>
+                                                        
+
+                                                    </select>
+                                                    <input name="relName" type="hidden" id="relName"/>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <h4>Permanent Mailing Address</h4>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* Country :</label>
+                                                <div class="col-sm-8">
+                                                    <select class="input-sm form-control" name="country" id="country">
+                                                    <option value="1" >PHILIPPINES</option>
+
+
+                                                    </select>
+                                                </div>
+                                                <input name="countryName" type="hidden" id="countryName"/>
+                                            </div>
+                                            <div class="form-group php">
+                                                <label class="col-sm-4 control-label">* Province :</label>
+                                                <div class="col-sm-8">
+                                                    <select class="input-sm form-control" name="province" id="province">
+                                                        <option value="0">Select a province</option>
+                                                        <option value="14-1" >ABRA</option>
+<option value="16-2" >AGUSAN DEL NORTE</option>
+<option value="16-3" >AGUSAN DEL SUR</option>
+<option value="6-4" >AKLAN</option>
+<option value="5-5" >ALBAY</option>
+<option value="6-6" >ANTIQUE</option>
+<option value="14-81" >APAYAO</option>
+<option value="3-72" >AURORA</option>
+<option value="4-77" >AURORA</option>
+<option value="9-7" >BASILAN</option>
+<option value="3-8" >BATAAN</option>
+<option value="2-9" >BATANES</option>
+<option value="4-10" >BATANGAS</option>
+<option value="14-11" >BENGUET</option>
+<option value="8-78" >BILIRAN</option>
+<option value="7-12" >BOHOL</option>
+<option value="10-13" >BUKIDNON</option>
+<option value="3-14" >BULACAN</option>
+<option value="2-15" >CAGAYAN</option>
+<option value="5-16" >CAMARINES NORTE</option>
+<option value="5-17" >CAMARINES SUR</option>
+<option value="10-18" >CAMIGUIN</option>
+<option value="6-19" >CAPIZ</option>
+<option value="5-20" >CATANDUANES</option>
+<option value="4-21" selected="selected">CAVITE</option>
+<option value="7-22" >CEBU</option>
+<option value="11-81" >DAVAO DE ORO</option>
+<option value="11-23" >DAVAO DEL NORTE</option>
+<option value="11-24" >DAVAO DEL SUR</option>
+<option value="11-25" >DAVAO ORIENTAL</option>
+<option value="8-26" >EASTERN SAMAR</option>
+<option value="6-79" >GUIMARAS</option>
+<option value="14-27" >IFUGAO</option>
+<option value="1-28" >ILOCOS NORTE</option>
+<option value="1-29" >ILOCOS SUR</option>
+<option value="6-30" >ILOILO</option>
+<option value="2-31" >ISABELA</option>
+<option value="12-101" >KALAMANSIG</option>
+<option value="14-32" >KALINGA</option>
+<option value="1-33" >LA UNION</option>
+<option value="4-34" >LAGUNA</option>
+<option value="12-35" >LANAO DEL NORTE</option>
+<option value="15-36" >LANAO DEL SUR</option>
+<option value="8-37" >LEYTE</option>
+<option value="15-38" >MAGUINDANAO</option>
+<option value="12-98" >MARAWI CITY</option>
+<option value="4-40" >MARINDUQUE</option>
+<option value="5-41" >MASBATE</option>
+<option value="10-42" >MISAMIS OCCIDENTAL</option>
+<option value="10-43" >MISAMIS ORIENTAL</option>
+<option value="14-44" >MT. PROVINCE</option>
+<option value="13-39" >NCR - 1ST DISTRICT</option>
+<option value="13-74" >NCR - 2ND DISTRICT</option>
+<option value="13-75" >NCR - 3RD DISTRICT</option>
+<option value="13-76" >NCR - 4TH DISTRICT</option>
+<option value="6-45" >NEGROS OCCIDENTAL</option>
+<option value="7-46" >NEGROS ORRIENTAL</option>
+<option value="12-47" >NORTH COTABATO</option>
+<option value="8-48" >NORTHERN SAMAR</option>
+<option value="17-999" >NOT SPECIFIED</option>
+<option value="3-49" >NUEVA ECIJA</option>
+<option value="2-50" >NUEVA VIZCAYA</option>
+<option value="4-51" >OCCIDENTAL MINDORO</option>
+<option value="4-52" >ORIENTAL MINDORO</option>
+<option value="4-53" >PALAWAN</option>
+<option value="3-54" >PAMPANGA</option>
+<option value="1-55" >PANGASINAN</option>
+<option value="4-56" >QUEZON</option>
+<option value="2-57" >QUIRINO</option>
+<option value="4-58" >RIZAL</option>
+<option value="4-59" >ROMBLON</option>
+<option value="11-80" >SARANGANI</option>
+<option value="7-61" >SIQUIJOR</option>
+<option value="5-62" >SORSOGON</option>
+<option value="11-63" >SOUTH COTABATO</option>
+<option value="12-100" >SOUTH COTABATO</option>
+<option value="8-64" >SOUTHERN LEYTE</option>
+<option value="11-65" >SULTAN KUDARAT</option>
+<option value="12-99" >SULTAN KUDARAT</option>
+<option value="15-66" >SULU</option>
+<option value="16-67" >SURIGAO DEL NORTE</option>
+<option value="16-68" >SURIGAO DEL SUR</option>
+<option value="3-69" >TARLAC</option>
+<option value="15-70" >TAWI-TAWI</option>
+<option value="8-60" >WESTERN SAMAR</option>
+<option value="3-71" >ZAMBALES</option>
+<option value="9-72" >ZAMBO DEL NORTE</option>
+<option value="9-73" >ZAMBO DEL SUR</option>
+<option value="9-74" >ZAMBOANGA SIBUGAY</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group php">
+                                                <label class="col-sm-4 control-label">* City :</label>
+                                                <div class="col-sm-8">
+                                                    <select class="input-sm form-control" name="city" id="city">
+                                                        <option value="0">Select a city</option>
+<option value="1" >ALFONSO</option>
+<option value="2" >AMADEO</option>
+<option value="3" >BACOOR</option>
+<option value="4" >CARMONA</option>
+<option value="5" >CAVITE CITY</option>
+<option value="24" >CORREGIDOR</option>
+<option value="6" >DASMARINAS</option>
+<option value="23" >GEN. MARIANO ALVAREZ</option>
+<option value="7" >GENERAL EMILIO AGUINALDO</option>
+<option value="8" >GENERAL TRIAS</option>
+<option value="9" selected="selected">IMUS  (Capital)</option>
+<option value="10" >INDANG</option>
+<option value="11" >KAWIT</option>
+<option value="12" >MAGALLANES</option>
+<option value="13" >MARAGONDON</option>
+<option value="14" >MENDEZ (MENDEZ-NUNEZ)</option>
+<option value="15" >NAIC</option>
+<option value="16" >NOVELETA</option>
+<option value="17" >ROSARIO</option>
+<option value="18" >SILANG</option>
+<option value="19" >TAGAYTAY CITY</option>
+<option value="20" >TANZA</option>
+<option value="21" >TERNATE</option>
+<option value="22" >TRECE MARTIRES CITY</option>
+                                                    
+                                                    </select>
+                                                    <small id="cityHelp" class="form-text text-muted sr-only">
+                                                        Updating city please wait...
+                                                    </small>
+                                                </div>
+                                            </div>
+                                            <div class="form-group nonphp sr-only">
+                                                <label class="col-sm-4 control-label">* Province/State:</label>
+                                                <div class="col-sm-8">
+                                                    <input class="input-sm form-control" name="province_name" 
+                                                    type="text" id="province_name" maxlength="49" value="" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group nonphp sr-only">
+                                                <label class="col-sm-4 control-label">* City:</label>
+                                                <div class="col-sm-8">
+                                                    <input class="input-sm form-control" name="city_name" 
+                                                    type="text" id="city_name" maxlength="49" value="" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* House No.:</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control form-control-sm" name="houseno"
+                                                           type="text" id="houseno" maxlength="99" value=""/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* Street:</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control form-control-sm" name="street"
+                                                           type="text" id="street" maxlength="99" placeholder="Street, Subdivision/Village (if applicable)" value=""/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group php">
+                                                <label class="col-sm-4 control-label">* Barangay:</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control form-control-sm" name="barangay"
+                                                           type="text" id="barangay" maxlength="99" value=""/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group php">
+                                                <label class="col-sm-4 control-label">District:</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control form-control-sm" name="district"
+                                                           type="text" id="district" maxlength="99" value=""/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* Zip Code :</label>
+                                                <div class="col-sm-3">
+                                                    <input class="input-sm form-control" name="postal" type="text" id="postal" maxlength="10" value=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <h4>Contact Information</h4>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Landline No. :</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="input-sm form-control" placeholder="e.g. 63-2-406-1611" name="telNo" id="telNo" maxlength="20" value=""/>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* Mobile No. :</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="input-sm form-control" placeholder="e.g. 09271231611" name="mobileNo" id="mobileNo" maxlength="20" value=""/>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">* E-mail Address :</label>
+                                                <div class="col-sm-8">
+                                                    <input type="email" class="input-sm form-control" name="email" id="email" maxlength="40" value=""/>
+                                                </div>
+                                            </div> <div class="form-group">
+                                                    <label class="col-sm-4 control-label"> LRN Number :</label>
+                                                    <div class="col-sm-8">
+                                                        <input class="input-sm form-control" name="LRN" type="text" id="surname" maxlength="40" value="" />
+                                                    </div>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <h4>Other Information</h4>
+                                            <div class="form-group">
+                                                <label class="col-sm-5 control-label">* Are you fully vaccinated (1st and 2nd dose) against COVID19?</label>
+                                                <div class="col-sm-1">
+                                                    <label class="radio-inline"><input type="radio" name="vaccine" value="1" >Yes</label>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <label class="radio-inline"><input type="radio" name="vaccine" value="0" >No</label>
+                                                </div>
+                                            </div>
+                                        
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <hr/>
+                                            <div class="form-group text-center">
+                                                <button type="submit" class="btn btn-default" name="btnback" id="btnback" value="Back" onclick="document.form1.onsubmit=null; return true;">
+                                                    <i class="glyphicon  glyphicon-chevron-left"></i>&nbsp;Back
+                                                </button>
+                                                
+                                                <button type="submit" class="btn btn-warning" action="reviewbasic.html" name="btnSend" id="btnSend" value="Review">
+                                                    Review&nbsp;<i class="glyphicon glyphicon-chevron-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!--Footer-->
+        <section class="contact-section bg-ltblack text-white ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <h4 class="text-gold">CONTACT US</h4>
+                        <table class="table table-borderless table-condensed">
+                            <tr>
+                                <th class="col-sm-1">
+                                    <i class="glyphicon glyphicon-home"></i>
+                                </th>
+                                <td class="col-sm-11">
+                                    <strong>General Flaviano Yengko Senior High School</strong><br />
+                                    Blk 7 Lot 66-68 Dama de Noche Street Pasong Buaya 2,<br>
+                                    Imus city, Cavite
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="col-sm-1">
+                                    <i class="glyphicon glyphicon-globe"></i>
+                                </th>
+                                <td class="col-sm-11">
+                                    <a class="text-white" href="https://www.facebook.com/YengkoSHS/" target="_blank">https://www.facebook.com/YengkoSHS/</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="col-sm-1">
+                                    <i class="glyphicon glyphicon-globe"></i>
+                                </th>
+                                <td class="col-sm-11">
+                                    <a class="text-white" href="https://www.facebook.com/profile.php?id=100086140871661" target="_blank">https://www.facebook.com/SSG Yengko 2022-2023/</a>
+                                </td>
+                            </tr>    
+            </div>
+        </footer>  
+                <!--Scripts-->
+        <script src="resources/jquery/jqueryui.min.js" type="text/javascript"></script>
+        <script src="resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <script src="resources/jquery/ui/minified/jquery-ui.custom.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                if ($(window).width() <= 568  ){
+                    $("h3 small a").removeClass("pull-right");   
+                    $("div.panel-heading button").removeClass("pull-right");
+                    $("h3 small form").removeClass("pull-right");
+                    
+                    $("h3 small a").addClass("block");
+                    $("div.panel-heading button").addClass("block");
+                    $("h3 small form").addClass("block");
+                    
+                    $("h3").css("font-size","1.3em");
+                    $("body").css("font-size","1em");
+                }
+                
+                if ($(window).width() > 568  ){
+                    $("h3 small a").addClass("pull-right");   
+                    $("div.panel-heading button").addClass("pull-right");
+                    $("h3 small form").addClass("pull-right");
+                    
+                    $("h3 small a").removeClass("block");
+                    $("div.panel-heading button").removeClass("block");
+                    $("h3 small form").removeClass("block");
+                    
+                }
+            });
+        </script>    
+        
+        <script src="resources/script/basicinfo.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function() {
+                $( ".datepicker" ).datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: "1980:c",
+                    firstDay: 0,
+                    maxDate : 0
+                });
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,2 +1,2 @@
-Our team used the bootstrapmade.com web template due to short working hours and a lack of people to help create our webpage project. 
+Our team used the bootstrapmade.com web template due to short working hours and a lack of manpower to help create our webpage project. 
 It gives a free template for establishing a website, and it is unrestricted in terms of updating items on the website as long as its copyright is still intact at the end or bottom.

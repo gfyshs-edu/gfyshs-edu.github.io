@@ -1,0 +1,17 @@
+
+@media (min-width: 1200px) {
+    .player-item,
+    .coach-item{
+        padding: 7%;
+    }
+    
+        .coach-item img{
+            width: 62%;
+            margin: 0 auto;
+        }
+        
+    
+    .profile-item img{
+        width: 50%;
+    }
+}

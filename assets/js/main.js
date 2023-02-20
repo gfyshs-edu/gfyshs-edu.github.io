@@ -131,4 +131,17 @@
    */
   new PureCounter();
 
+
+    /**
+   * Hero carousel indicators Slides
+   */
+    let heroCarouselIndicators = select("#hero1-carousel-indicators")
+    let heroCarouselItems = select('#hero1Carousel .carousel-item', true)
+  
+    heroCarouselItems.forEach((item, index) => {
+      (index === 0) ?
+      heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
+        heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
+    });
+
 })()

@@ -1,0 +1,63 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    h3{font-size: 1.4em;}
+    
+    h4{font-size: 1.1em;}
+    
+    .header-bg{
+        background: url("../images/headerbg.png") no-repeat right center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    .navbar-collapse{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    #index-section{
+        padding-top:2.15%;
+        padding-bottom: 2.15%;
+    }
+    
+        #index-section h1{font-size: 2em;}
+        
+        #index-section h3{font-size: 1.2em;}
+        
+        #index-section .book{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    
+        .intro-box h1{margin-top: 15%;}
+        
+    #index-subscription-section{
+        padding-top: 2.5%;
+        padding-bottom: 1.5%;
+    }
+        #index-subscription-section h3{
+            margin-top: 2.5%;
+            font-size: 1.2em;
+        }
+    
+        #index-subscription-section a{padding: 5% 20%;}
+        
+    .editors-note img{
+        width: 30%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        float: left;
+    }
+    
+    .about-section p.h3{
+        font-size: 1.3768em;
+    }
+    
+    .profile-box{
+        padding: 5%;
+    }
+    
+    .profile-footer{
+        padding: 3% 7%;
+    }
+        .profile-footer table td{padding: 3%;}
+}
