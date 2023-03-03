@@ -1,0 +1,54 @@
+@charset "windows-1252";
+
+.check {
+    font-size: 1.9em;
+    color: #f0ad4e;
+} 
+.tsklabel, .tskchild {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.tskchild {
+    margin-left: 20px;
+}
+.tskchild i {
+    font-size: 0.7em;
+}
+.remove{
+    font-size: 1.9em;
+    color: red;
+}
+.panel-success .panel-heading {
+    background-color: #dff0d8 !important;
+    border-color: #dff0d8 !important;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: black;
+}
+.panel-success .row {
+    margin-bottom: 0.3em;
+}
+
+.amountToPay {
+    font-size: 1.7em;
+}
+
+.amountDue {
+    font-size: 1.3em;
+}
+
+.amountValue {
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: 0.3em;
+}
+
+.payInstruct {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.payInstruct img {
+    margin-top: 2em;
+}
+

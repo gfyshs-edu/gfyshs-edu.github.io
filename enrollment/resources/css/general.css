@@ -28,10 +28,10 @@
 body {
     /* Margin bottom by footer height */
 
-    background: url("../images/bgright.png");
+    background: url("resources/images/bgright.png");
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 20%;
+    background-size: 400px;
     font-size: 12px;
     font-family: 'robotoregular', Arial, sans-serif;
     line-height: 22px;
@@ -83,7 +83,7 @@ header {
     }
 
 .content-section{
-    background: #fff;
+    background: skyblue;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
 }
@@ -99,11 +99,11 @@ header {
     letter-spacing: 0;
 }
     .form-header{
-        background: #fdc601;
+        background: #0066b2;
     }
     
     .announcement-header{
-        background: #FE2E2E;    
+        background: skyblue;    
     }
 
 
@@ -118,19 +118,19 @@ header {
     .signup-content,
     .login-content,
     .applicationschedule-content{
-        border-left: 1px solid #fdc601;
-        border-right:1px solid #fdc601;
-        border-bottom: 1px solid #fdc601;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
     }
     
     .announcement-content{
-        border-left: 1px solid #FE2E2E;
-        border-right:1px solid #FE2E2E;
-        border-bottom: 1px solid #FE2E2E;
+        border-left: 1px solid black;
+        border-right:1px solid black;
+        border-bottom: 1px solid black;
     }
     
 .contact-section {
-    background: #fdc601;
+    background: 1px solid black;
     padding-top: 3%;
     padding-bottom: 3%;
 }
@@ -152,7 +152,7 @@ header {
     }
     
     .applicant-item input[type=radio]:after{
-        border: 1px solid red;
+        border: 1px solid #02010E;
     }
   
         .applicant-item  img{
@@ -256,25 +256,28 @@ ul.important-notes-single{
 
     .panel-red .panel-heading {
         background-color: skyblue;
-        border-color: #d9534f;
+        border-color: #02010E;
         color: #fff;
     }
 
     .panel-red a {
-        color: #d9534f;
+        color: #02010E;
     }
 
         .panel-red a:hover {
-            color: #b52b27;
+            color: #02010E;
         }
 
 .panel-yellow {
-    border-color: #f0ad4e;
+    border-color: green;
+}
+.panel-heading {
+    background-color: skyblue;
 }
 
 .panel-yellow .panel-heading {
-    background-color: #f0ad4e;
-    border-color: #f0ad4e;
+    background-color: #02010E;
+    border-color: #02010E;
     color: #fff;
 }
 
@@ -402,4 +405,7 @@ table.activity-log ul {
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
+}
+ {
+
 }
